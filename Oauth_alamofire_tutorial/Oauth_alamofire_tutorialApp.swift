@@ -11,7 +11,7 @@ import SwiftUI
 struct Oauth_alamofire_tutorialApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(UserVM())
         }
     }
 }

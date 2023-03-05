@@ -14,7 +14,7 @@ struct ContentView: View {
                 Image(systemName: "lock.circle")
                     .font(.system(size: 160)) //아이콘 크기
                 Spacer()
-                NavigationLink(destination: Text("로그인 화면"), label: {
+                NavigationLink(destination: LoginView(), label: {
                     HStack{
                         Spacer()
                         Text("로그인 하러가기")
@@ -26,7 +26,7 @@ struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 6))
                 }) //destination: 넘어가는 화면, label: 실제 보여주는 부분
                 .padding([.bottom], 10)
-                NavigationLink(destination: Text("회원가입 화면"), label: {
+                NavigationLink(destination: RegisterView(), label: {
                     HStack{
                         Spacer()
                         Text("회원가입 하러가기")
@@ -39,7 +39,7 @@ struct ContentView: View {
                 })
                 
                 Spacer().frame(height: 40) //간격두기
-                NavigationLink(destination: Text("내 프로필"), label: {
+                NavigationLink(destination: ProfileView(), label: {
                     HStack{
                         Spacer()
                         Text("내 프로필 보러가기")
@@ -51,7 +51,7 @@ struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 6))
                 })
                 .padding([.bottom], 10) //아래 간격
-                NavigationLink(destination: Text("사용자 목록"), label: {
+                NavigationLink(destination: UserListView(), label: {
                     HStack{
                         Spacer()
                         Text("사용자 목록 보러가기")
